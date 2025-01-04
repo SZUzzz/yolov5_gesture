@@ -1,0 +1,25 @@
+# 数据路径
+path: ""  # 不需要修改，dataset root dir
+# 注意数据路径分隔符使用【/】,不是【\】
+# 项目不要出现含有中文字符的目录文件或路径，否则会出现很多异常！
+train:
+  - "/home/rp/zz/data/trainval/call/train.txt"
+  - "/home/rp/zz/data/trainval/one/train.txt"
+  - "/home/rp/zz/data/trainval/three/train.txt"
+  - "/home/rp/zz/data/trainval/two_up/train.txt"
+  - "/home/rp/zz/data/trainval/two_up_inverted/train.txt"
+
+val:
+  - "/home/rp/zz/data/trainval/call/val.txt"
+  - "/home/rp/zz/data/trainval/one/val.txt"
+  - "/home/rp/zz/data/trainval/three/val.txt"
+  - "/home/rp/zz/data/trainval/two_up/val.txt"
+  - "/home/rp/zz/data/trainval/two_up_inverted/val.txt"
+
+
+test:  # test images (optional)
+data_type: voc
+
+# Classes
+nc: 6  # number of classes
+names: { 'call': 0, 'one': 1, 'three': 2, 'two_up': 3, 'two_up_inverted': 4,'no_gesture': 5 }

@@ -1,0 +1,6 @@
+train: /home/zz/yolov5/shoushi2/images/train
+val: /home/zz/yolov5/shoushi2/images/val
+test: /home/zz/yolov5/shoushi2/images/test
+
+nc: 6
+names: ['person', 'fist', 'no_gesture', 'like', 'ok', 'palm']
